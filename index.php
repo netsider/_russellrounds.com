@@ -43,9 +43,7 @@ body{
 </style>
   <div id="box">
   
-  <div class="innerbox border">
-  <strong>Welcome!</strong>
-  </div> 
+  <div class="innerbox border">Welcome!</div> 
 
   
 <div class="border" style="width: 65%;float:left;height: 40%">A</div><div style="width:35%;float:left;height:40%;border-width: 0px 0px 1px 1px;border-style:solid;text-align:center;">Menu:<br/>
