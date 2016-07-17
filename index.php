@@ -22,7 +22,7 @@ body{
 	border-style: solid;
 	border-width: 1px;
 }
-.innerbox{
+.innerbox{ 
 	border-radius: 25px 25px 0px 0px;
 	text-align: center;
 }
