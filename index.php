@@ -24,17 +24,15 @@ body{
 	background: #054a7b;
 }
 #box{
-	border-style: solid;
-	border-width: 0px;
 	border-radius: 25px;
 	background: #FFFFFF;
-	box-shadow: 0px 0px 1px #000000;
 }
 .border{
 	border-style: solid;
 	border-width: 1px;
+	box-shadow: 0px 0px 1px #000000;
 }
-.innerbox{ 
+#innerbox{ 
 	border-radius: 25px 25px 0px 0px;
 	text-align: center;
 	padding: 1px;
@@ -49,20 +47,32 @@ body{
 	display: flex;
 	align-items: center;
 }
-.footerbox{
+#footerbox{
 	height: 5%;
 	display: block;
 	clear: left;
 	border-radius: 0px 0px 25px 25px;
+	text-align: center;
+}
+#menu{
+	height:100%;
+	width:75%;
+	margin: 0 auto;
+	text-align: center;
+}
+#myphoto{
+	width:60%;
+	height:auto;
 }
 </style>
-  <div id="box">
+  <div id="box" class="border">
   
-	<div class="innerbox border">Welcome!</div>  
-	<div class="border" style="width: 65%;float:left;height: 40%;"><img src="russwater.jpg" height="50%" width="50%" class="centim"></div><div style="width:35%;float:left;height:40%;border-width: 0px 0px 1px 1px;border-style:solid;text-align:center;">Menu:<br/>
+	<div id="innerbox">Welcome!</div>  
+	<div style="width: 65%;float:left;height: 40%;overflow: hidden;"><img src="russsuit.jpg" id="myphoto" class="centim img-circle" style="position: relative;top: 0%;"></div><div style="width:35%;float:left;height:40%;"><div id="menu" class="border">Menu:<br/></div>
+	
 	</div><br/>
-	<div style="width:35%;float:left;height:50%;border-width: 0px 0px 1px 1px;border-style:solid;">D</div><div class="border" style="width: 65%;float:left;height: 50%">C</div>
-	<br/><div class="footerbox border">Goodbye!</div>  
+	<div style="width:35%;float:left;height:50%;">D</div><div style="width: 65%;float:left;height: 50%"></div>
+	<br/><div id="footerbox">Created by Russell Rounds.</div>  
   </div>
   
 
