@@ -39,7 +39,6 @@ body{
 	text-align: center;
 	padding: 1px;
 	height: 5%;
-    vertical-align:middle;
 	width: 100%;
 }
 .centim{
@@ -50,14 +49,20 @@ body{
 	display: flex;
 	align-items: center;
 }
+.footerbox{
+	height: 5%;
+	display: block;
+	clear: left;
+	border-radius: 0px 0px 25px 25px;
+}
 </style>
   <div id="box">
   
-	<div class="innerbox border" width="100%">Welcome!</div>  
+	<div class="innerbox border">Welcome!</div>  
 	<div class="border" style="width: 65%;float:left;height: 40%;"><img src="russwater.jpg" height="50%" width="50%" class="centim"></div><div style="width:35%;float:left;height:40%;border-width: 0px 0px 1px 1px;border-style:solid;text-align:center;">Menu:<br/>
 	</div><br/>
-	<div style="width:35%;float:left;height:55%;border-width: 0px 0px 1px 1px;border-style:solid;">D</div><div class="border" style="width: 65%;float:left;height: 55%">C</div>
-   
+	<div style="width:35%;float:left;height:50%;border-width: 0px 0px 1px 1px;border-style:solid;">D</div><div class="border" style="width: 65%;float:left;height: 50%">C</div>
+	<br/><div class="footerbox border">Goodbye!</div>  
   </div>
   
 
