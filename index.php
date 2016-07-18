@@ -39,9 +39,7 @@ body{
 	text-align: center;
 	padding: 1px;
 	height: 5%;
-	display:table-cell;
     vertical-align:middle;
-	position: relative;
 	width: 100%;
 }
 .centim{
@@ -55,8 +53,7 @@ body{
 </style>
   <div id="box">
   
-	<div class="innerbox border">Welcome!</div> 
-  
+	<div class="innerbox border" width="100%">Welcome!</div>  
 	<div class="border" style="width: 65%;float:left;height: 40%;"><img src="russwater.jpg" height="50%" width="50%" class="centim"></div><div style="width:35%;float:left;height:40%;border-width: 0px 0px 1px 1px;border-style:solid;text-align:center;">Menu:<br/>
 	</div><br/>
 	<div style="width:35%;float:left;height:55%;border-width: 0px 0px 1px 1px;border-style:solid;">D</div><div class="border" style="width: 65%;float:left;height: 55%">C</div>
@@ -68,7 +65,7 @@ body{
  <script>
 $(window).resize(function(){
 	$('#box').css({
-		position:'fixed',
+		position:'absolute',
 		left: ($(window).width() - $('#box').outerWidth())/2,
 		top: ($(window).height() - $('#box').outerHeight())/2
 	});
