@@ -21,7 +21,7 @@
 }
 
 body{
-	background: #000000;
+	background: #054a7b;
 }
 #box{
 	border-style: solid;
@@ -39,16 +39,27 @@ body{
 	text-align: center;
 	padding: 1px;
 	height: 5%;
+	display:table-cell;
+    vertical-align:middle;
+	position: relative;
+	width: 100%;
+}
+.centim{
+	margin-left: auto;
+    margin-right: auto;
+	margin: 0, auto;
+	justify-content: center;
+	display: flex;
+	align-items: center;
 }
 </style>
   <div id="box">
   
-  <div class="innerbox border">Welcome!</div> 
-
+	<div class="innerbox border">Welcome!</div> 
   
-<div class="border" style="width: 65%;float:left;height: 40%">A</div><div style="width:35%;float:left;height:40%;border-width: 0px 0px 1px 1px;border-style:solid;text-align:center;">Menu:<br/>
-</div><br/>
-<div style="width:35%;float:left;height:55%;border-width: 0px 0px 1px 1px;border-style:solid;">D</div><div class="border" style="width: 65%;float:left;height: 55%">C</div>
+	<div class="border" style="width: 65%;float:left;height: 40%;"><img src="russwater.jpg" height="50%" width="50%" class="centim"></div><div style="width:35%;float:left;height:40%;border-width: 0px 0px 1px 1px;border-style:solid;text-align:center;">Menu:<br/>
+	</div><br/>
+	<div style="width:35%;float:left;height:55%;border-width: 0px 0px 1px 1px;border-style:solid;">D</div><div class="border" style="width: 65%;float:left;height: 55%">C</div>
    
   </div>
   
