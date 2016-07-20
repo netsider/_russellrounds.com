@@ -86,7 +86,6 @@ body{
 }
 .mainText{
 	position: relative;
-	top: 5%;
 }
 </style>
   <div id="box" class="border">
@@ -98,11 +97,14 @@ body{
 	</div>
 	
 	</div><br/>
-	<div id="bottomRow" style="width:100%;float:left;height:50%;"><p class="mainText" id="homeText">Welcome to my website.  Please use the links above to navigate content.</p><p class="mainText" id="contactText">You can contact me using the following methods:</p><p class="mainText" id="linkText">Links:<br/></p></div>
+	<div id="bottomRow" style="width:100%;float:left;height:50%;">
+	<p class="mainText" id="homeText">Welcome to my website.  Please use the links above to navigate content.</p>
+	<p class="mainText" id="contactText">Contact me:<br/><br/><strong>Email:</strong> <a href="mailto:netside@protonmail.com">netside@protonmail.com</a><br/><strong>Facebook:</strong> <a href="http://facebook.com/russellrounds">http://facebook.com/russellrounds</a></p>
+	<p class="mainText" id="linkText">Links:<br/><br/><strong>Github:</strong> <a href="https://github.com/netsider">https://github.com/netsider</a></p></div>
 	
 	
 	
-	<br/><div id="footerbox">Created by <a href="mailto:netside@protonmail.com">Russell Rounds</a>.</div>  
+	<br/><div id="footerbox">Created by <a href="mailto:netside@protonmail.com">Russell Rounds</a>. &copy; 2016</div>  
   </div>
   
 
