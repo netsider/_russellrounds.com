@@ -7,19 +7,18 @@
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head><body>
 <style>
-@media (max-width: 2000px) {
+@media (max-width: 4000px) {
   #box {
     width: 40%;
 	height: 80%;
   }
 }
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
   #box {
     width: 90%;
 	height: 80%;
   }
 }
-
 body{
 	background: #054a7b;
 }
@@ -39,7 +38,7 @@ body{
 	height: 5%;
 	width: 100%;
 }
-.centim{
+.center{
 	margin-left: auto;
     margin-right: auto;
 	margin: 0, auto;
@@ -63,16 +62,47 @@ body{
 #myphoto{
 	width:60%;
 	height:auto;
+	position: relative;
+	top: 10%;
+}
+#sideColumn{
+	width:35%;
+	float:left;
+	height:40%;
+	line-height: 200%;
+}
+#firstColumn{
+	width: 65%;
+	float:left;
+	height: 40%;
+	overflow: hidden;
+}
+#bottomRow{
+	width:100%;
+	float:left;
+	height:50%;
+	text-align: center;
+	padding: 2px;
+}
+.mainText{
+	position: relative;
+	top: 5%;
 }
 </style>
   <div id="box" class="border">
   
-	<div id="innerbox">Welcome!</div>  
-	<div style="width: 65%;float:left;height: 40%;overflow: hidden;"><img src="russsuit.jpg" id="myphoto" class="centim img-circle" style="position: relative;top: 0%;"></div><div style="width:35%;float:left;height:40%;"><div id="menu" class="border">Menu:<br/></div>
+	<div id="innerbox">&nbsp</div>  
+	<div id="firstColumn"><div class="sixteen-nine"><img src="russsuit.jpg" id="myphoto" class="center img-rounded"></div></div><div id="sideColumn"><div id="menu" class="">Menu:<br/><a href="#" onclick="showHome()">Home</a><br/><a href="#" onclick="showContact()">Contact</a><br/><a href="#" onclick="showLinks()">Links</a><br/><br/>
+	
+	
+	</div>
 	
 	</div><br/>
-	<div style="width:35%;float:left;height:50%;">D</div><div style="width: 65%;float:left;height: 50%"></div>
-	<br/><div id="footerbox">Created by Russell Rounds.</div>  
+	<div id="bottomRow" style="width:100%;float:left;height:50%;"><p class="mainText" id="homeText">Welcome to my website.  Please use the links above to navigate content.</p><p class="mainText" id="contactText">You can contact me using the following methods:</p><p class="mainText" id="linkText">Links:<br/></p></div>
+	
+	
+	
+	<br/><div id="footerbox">Created by <a href="mailto:netside@protonmail.com">Russell Rounds</a>.</div>  
   </div>
   
 
@@ -84,8 +114,26 @@ $(window).resize(function(){
 		left: ($(window).width() - $('#box').outerWidth())/2,
 		top: ($(window).height() - $('#box').outerHeight())/2
 	});
+	showHome()
 });
 
 $(window).resize();
+
+
+function showHome(){
+	$("#homeText").show();
+	$("#contactText").hide();
+	$("#linkText").hide();
+}
+function showLinks(){
+	$("#homeText").hide();
+	$("#contactText").hide();
+	$("#linkText").show();
+}
+function showContact(){
+	$("#homeText").hide();
+	$("#contactText").show();
+	$("#linkText").hide();
+}
 </script>
 </body></html>
