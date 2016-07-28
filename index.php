@@ -64,8 +64,9 @@ body{
 	height:auto;
 	position: relative;
 	top: 10%;
+	box-shadow: 1px 1px 6px 1px #000000;
 }
-#sideColumn{
+#secondColumn{
 	width:35%;
 	float:left;
 	height:40%;
@@ -77,7 +78,7 @@ body{
 	height: 40%;
 	overflow: hidden;
 }
-#bottomRow{
+#mainRow{
 	width:100%;
 	float:left;
 	height:50%;
@@ -91,20 +92,19 @@ body{
   <div id="box" class="border">
   
 	<div id="innerbox">&nbsp</div>  
-	<div id="firstColumn"><div class="sixteen-nine"><img src="russsuit.jpg" id="myphoto" class="center img-rounded"></div></div><div id="sideColumn"><div id="menu" class="">Menu:<br/><a href="#" onclick="showHome()">Home</a><br/><a href="#" onclick="showContact()">Contact</a><br/><a href="#" onclick="showLinks()">Links</a><br/><br/>
+	<div id="firstColumn"><div><img src="russsuit.jpg" id="myphoto" class="center img-rounded"></div></div><div id="secondColumn"><div id="menu" class="">Menu:<br/><a href="#" onclick="showHome()">Home</a><br/><a href="#" onclick="showContact()">Contact</a><br/><a href="#" onclick="showLinks()">Links</a><br/><br/>
 	
 	
 	</div>
 	
 	</div><br/>
-	<div id="bottomRow" style="width:100%;float:left;height:50%;">
+	<div id="mainRow">
+	<hr width="75%" size="3px" />
 	<p class="mainText" id="homeText">Welcome to my website.  Please use the links above to navigate content.</p>
 	<p class="mainText" id="contactText">Contact me:<br/><br/><strong>Email:</strong> <a href="mailto:netside@protonmail.com">netside@protonmail.com</a><br/><strong>Facebook:</strong> <a href="http://facebook.com/russellrounds">http://facebook.com/russellrounds</a></p>
 	<p class="mainText" id="linkText">Links:<br/><br/><strong>Github:</strong> <a href="https://github.com/netsider">https://github.com/netsider</a></p></div>
 	
-	
-	
-	<br/><div id="footerbox">Created by <a href="mailto:netside@protonmail.com">Russell Rounds</a>. &copy; 2016</div>  
+	<br/><div id="footerbox">Created by <a href="mailto:russellrounds@gmail.com">Russell Rounds</a>. &copy; 2016</div>  
   </div>
   
 
