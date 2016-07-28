@@ -1,3 +1,4 @@
+<!doctype html>
 <html><head>
 <title>RussellRounds.com</title>
 <meta charset="utf-8">
@@ -5,16 +6,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</head><body>
+</head><body onload="$(window).resize();">
 <style>
 @media (max-width: 4000px) {
-  #box {
+  #mainBox {
     width: 40%;
 	height: 80%;
   }
 }
 @media (max-width: 1000px) {
-  #box {
+  #mainBox {
     width: 90%;
 	height: 80%;
   }
@@ -22,16 +23,16 @@
 body{
 	background: #054a7b;
 }
-#box{
+#mainBox{
 	border-radius: 25px;
-	background: #FFFFFF;
+	background: #FFF;
 }
 .border{
 	border-style: solid;
 	border-width: 1px;
 	box-shadow: 0px 0px 1px #000000;
 }
-#innerbox{ 
+#titleBar{ 
 	border-radius: 25px 25px 0px 0px;
 	text-align: center;
 	padding: 1px;
@@ -46,7 +47,7 @@ body{
 	display: flex;
 	align-items: center;
 }
-#footerbox{
+#footer{
 	height: 5%;
 	display: block;
 	clear: left;
@@ -89,10 +90,10 @@ body{
 	position: relative;
 }
 </style>
-  <div id="box" class="border">
+  <div id="mainBox" class="border">
   
-	<div id="innerbox">&nbsp</div>  
-	<div id="firstColumn"><div><img src="russsuit.jpg" id="myphoto" class="center img-rounded"></div></div><div id="secondColumn"><div id="menu" class="">Menu:<br/><a href="#" onclick="showHome()">Home</a><br/><a href="#" onclick="showContact()">Contact</a><br/><a href="#" onclick="showLinks()">Links</a><br/><br/>
+	<div id="titleBar">&nbsp</div>  
+	<div id="firstColumn"><div><img src="russsuit.jpg" id="myphoto" class="center img-rounded"></div></div><div id="secondColumn"><div id="menu" class="">Menu:<hr width="75%" size="3px" style="margin-top:0;margin-bottom:0;"/><a href="#" onclick="showHome()">Home</a><br/><a href="#" onclick="showContact()">Contact</a><br/><a href="#" onclick="showLinks()">Links</a><br/><br/>
 	
 	
 	</div>
@@ -104,19 +105,21 @@ body{
 	<p class="mainText" id="contactText">Contact me:<br/><br/><strong>Email:</strong> <a href="mailto:netside@protonmail.com">netside@protonmail.com</a><br/><strong>Facebook:</strong> <a href="http://facebook.com/russellrounds">http://facebook.com/russellrounds</a></p>
 	<p class="mainText" id="linkText">Links:<br/><br/><strong>Github:</strong> <a href="https://github.com/netsider">https://github.com/netsider</a></p></div>
 	
-	<br/><div id="footerbox">Created by <a href="mailto:russellrounds@gmail.com">Russell Rounds</a>. &copy; 2016</div>  
+	<br/><div id="footer">Created by <a href="mailto:russellrounds@gmail.com">Russell Rounds</a>. &copy; 2016</div>  
   </div>
   
 
 
  <script>
 $(window).resize(function(){
-	$('#box').css({
+	$('#mainBox').css({
 		position:'absolute',
-		left: ($(window).width() - $('#box').outerWidth())/2,
-		top: ($(window).height() - $('#box').outerHeight())/2
+		left: ($(window).width() - $('#mainBox').outerWidth())/2,
+		top: ($(window).height() - $('#mainBox').outerHeight())/2
 	});
 	showHome()
+	console.log("Height: " + $(window).height());
+	console.log("Width:: " + $(window).width());
 });
 
 $(window).resize();
