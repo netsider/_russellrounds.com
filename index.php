@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html><head>
 <title>RussellRounds.com</title>
 <meta charset="utf-8">
