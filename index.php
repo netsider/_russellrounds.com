@@ -129,8 +129,8 @@ $(window).resize(function(){
 		top: ($(window).height() - $('#mainBox').outerHeight())/2
 	});
 	showHome()
-	console.log("Height: " + $(window).height());
-	console.log("Width:: " + $(window).width());
+	console.log("Window Height: " + $(window).height());
+	console.log("Window Width:: " + $(window).width());
 });
 
 $(window).resize();
@@ -151,5 +151,8 @@ function showContact(){
 	$("#contactText").show();
 	$("#linkText").hide();
 }
+
+var utterance = new SpeechSynthesisUtterance('Hello, Who Ever You Are.  Welcome to my website');
+window.speechSynthesis.speak(utterance);
 </script>
 </body></html>
